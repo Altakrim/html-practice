@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Element</title>
+    <style>
+        * {   /*  Basic Reset */
+            margin:0 ;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        nav {
+            background-color: #0a192f;
+            color: white;
+       
+        }
+             .navbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                
+            }
+            .logo {
+                font-size: 30px;
+                font-weight: 700;
+            }
+            .menu {
+                list-style: none;
+                display: flex;
+                gap:20px
+            }
+            .menu li a {
+                text-decoration: none;
+                color: white;
+                font-size: 16px;
+                transition: color 0 .3s;
+
+            }
+            .menu li a:hover {
+                color: #64ffda;
+            }
+            @media (max-width:600px) {
+                .menu {
+                    flex-direction: column;
+                    gap: 15px;
+                }
+            }
+            </style>
+
+</head>
+<body>
+    <h1>HTML Navbar Elements:</h1>
+    <p><ol>
+        <li>nav</li>
+        <li>Div / logo</li>
+        <li>ul</li>
+        <li>li</li>
+        <li>a</li>
+        <li>img</li>
+        <li>button</li>
+    </ol>
+    </p>
+    <hr>
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="logo">TakrimCodes</div>
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a> </li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+</body>
+</html>
